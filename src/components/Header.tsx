@@ -15,13 +15,13 @@ const Header = ({ cartItemsCount = 0, onCartClick }: HeaderProps) => {
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="/" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <a href="#" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
             Strona główna
           </a>
-          <a href="/produkty" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <a href="#produkty" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
             Produkty
           </a>
-          <a href="/kontakt" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <a href="#" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
             Kontakt
           </a>
         </nav>

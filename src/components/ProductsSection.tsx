@@ -41,18 +41,17 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="flex justify-center">
           {products.map((product) => (
-            <div key={product.id} className="flex justify-center">
-              <ProductCard
-                id={product.id}
-                name={product.name}
-                price={product.price}
-                colors={product.colors}
-                sizes={product.sizes}
-                onAddToCart={onAddToCart}
-              />
-            </div>
+            <ProductCard
+              key={product.id}
+              id={product.id}
+              name={product.name}
+              price={product.price}
+              colors={product.colors}
+              sizes={product.sizes}
+              onAddToCart={onAddToCart}
+            />
           ))}
         </div>
 

@@ -131,7 +131,7 @@ const ProductCard = ({ id, name, price, colors, sizes, onAddToCart }: ProductCar
         </div>
       </CardContent>
 
-      <CardFooter className="p-6 pt-0 space-y-3">
+      <CardFooter className="p-6 pt-0 flex flex-col gap-3">
         <Button
           className="w-full bg-accent hover:bg-accent-hover text-accent-foreground"
           onClick={handleAddToCart}
