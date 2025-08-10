@@ -26,16 +26,12 @@ const PolitykaPrywatnosci = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p>
-                  <strong>1.1.</strong> Administratorem Twoich danych osobowych jest Yappi sp. z o.o. 
-                  z siedzibą w Warszawie przy ul. Przykładowej 123, 00-001 Warszawa, NIP: 1234567890.
-                </p>
-                <p>
                   <strong>1.2.</strong> Możesz skontaktować się z nami w sprawach dotyczących ochrony danych 
-                  na adres e-mail: dane@yappi-kids.pl lub pisemnie na adres siedziby.
+                  na adres e-mail: kontakt@yappi.pl.
                 </p>
                 <p>
                   <strong>1.3.</strong> Niniejsza polityka prywatności określa zasady przetwarzania 
-                  i ochrony danych osobowych w związku z korzystaniem ze sklepu internetowego yappi-kids.pl.
+                  i ochrony danych osobowych w związku z korzystaniem ze sklepu internetowego yappi.pl.
                 </p>
               </CardContent>
             </Card>
@@ -101,11 +97,7 @@ const PolitykaPrywatnosci = () => {
                   <br/>• Organy państwowe - jeśli wynika to z przepisów prawa
                 </p>
                 <p>
-                  <strong>4.2.</strong> Nie przekazujemy danych osobowych do państw trzecich 
-                  ani organizacji międzynarodowych.
-                </p>
-                <p>
-                  <strong>4.3.</strong> Wszystkie podmioty przetwarzające dane w naszym imieniu 
+                  <strong>4.2.</strong> Wszystkie podmioty przetwarzające dane w naszym imieniu 
                   zobowiązane są do zachowania poufności i bezpieczeństwa danych.
                 </p>
               </CardContent>
@@ -127,7 +119,7 @@ const PolitykaPrywatnosci = () => {
                 </p>
                 <p>
                   <strong>5.2.</strong> Aby skorzystać z powyższych praw, skontaktuj się z nami 
-                  na adres dane@yappi-kids.pl.
+                  na adres kontakt@yappi.pl.
                 </p>
                 <p>
                   <strong>5.3.</strong> Masz również prawo do wniesienia skargi do Prezesa 
@@ -211,15 +203,14 @@ const PolitykaPrywatnosci = () => {
                   W sprawach dotyczących ochrony danych osobowych możesz skontaktować się z nami:
                 </p>
                 <p>
-                  <strong>E-mail:</strong> dane@yappi-kids.pl<br/>
-                  <strong>Adres pocztowy:</strong> Yappi sp. z o.o., ul. Przykładowa 123, 00-001 Warszawa<br/>
+                  <strong>E-mail:</strong> kontakt@yappi.pl<br/>
                   <strong>Telefon:</strong> +48 123 456 789
                 </p>
               </CardContent>
             </Card>
 
             <div className="text-center text-sm text-muted-foreground pt-8">
-              <p>Ostatnia aktualizacja: 10 stycznia 2024</p>
+              <p>Ostatnia aktualizacja: 10 sierpnia 2025</p>
             </div>
           </div>
         </div>

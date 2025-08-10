@@ -138,14 +138,14 @@ const Dostawa = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Wszystkie nasze produkty objęte są gwarancją jakości. W przypadku wad produkcyjnych 
-                  oferujemy bezpłatną wymianę lub zwrot pieniędzy.
+                  Wszystkie nasze produkty objęte są gwarancją jakości. 
+				  W przypadku wad produkcyjnych oferujemy wymianę lub zwrot pieniędzy, za wyłączeniem kosztów przesyłki.
                 </p>
                 
                 <div className="bg-accent/10 p-4 rounded-lg">
                   <p className="text-sm">
                     <strong>Kontakt w sprawie zwrotów:</strong><br/>
-                    E-mail: zwroty@yappi-kids.pl<br/>
+                    E-mail: kontakt@yappi.pl<br/>
                     Telefon: +48 123 456 789<br/>
                     Godziny: 9:00-17:00, pon-pt
                   </p>

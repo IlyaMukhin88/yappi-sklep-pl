@@ -40,11 +40,11 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Yappi Kids",
-    "url": "https://yappi-kids.pl",
+    "url": "https://yappi.pl",
     "description": "Ciepłe, wygodne kombinezony dziecięce Yappi",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://yappi-kids.pl/search?q={search_term_string}",
+      "target": "https://yappi.pl/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

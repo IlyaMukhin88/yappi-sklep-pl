@@ -27,7 +27,7 @@ const Regulamin = () => {
               <CardContent className="space-y-4">
                 <p>
                   <strong>1.1.</strong> Niniejszy regulamin określa zasady funkcjonowania sklepu internetowego Yappi Kids, 
-                  dostępnego pod adresem yappi-kids.pl, prowadzonego przez Yappi sp. z o.o.
+                  dostępnego pod adresem yappi.pl.
                 </p>
                 <p>
                   <strong>1.2.</strong> Korzystanie ze sklepu internetowego oznacza akceptację postanowień niniejszego regulaminu.
@@ -168,7 +168,7 @@ const Regulamin = () => {
                   lub prawną (rękojmi).
                 </p>
                 <p>
-                  <strong>7.2.</strong> Reklamacje można zgłaszać na adres e-mail: zwroty@yappi-kids.pl 
+                  <strong>7.2.</strong> Reklamacje można zgłaszać na adres e-mail: kontakt@yappi.pl 
                   lub pisemnie na adres siedziby Sprzedawcy.
                 </p>
                 <p>

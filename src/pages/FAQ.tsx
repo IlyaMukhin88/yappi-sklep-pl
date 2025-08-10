@@ -87,7 +87,7 @@ const FAQ = () => {
               <AccordionContent>
                 Tak, masz prawo do zwrotu w ciągu 14 dni od otrzymania produktu bez podania przyczyny. 
                 Kombinezon musi być w stanie nienaruszonym, z oryginalnymi metkami i opakowaniem. 
-                Koszt odesłania ponosi klient, chyba że zwrot wynika z naszej pomyłki.
+                W przypadku zwrotu koszt dostawy w obie strony ponosi klient, chyba że zwrot wynika z naszej pomyłki.
               </AccordionContent>
             </AccordionItem>
 
@@ -108,10 +108,9 @@ const FAQ = () => {
               </AccordionTrigger>
               <AccordionContent>
                 Kombinezony Yappi wykonane są z wysokiej jakości materiałów:
-                <br/>• Zewnętrzna warstwa: wodoodporna tkanina
-                <br/>• Wypełnienie: ciepła wata syntetyczna
-                <br/>• Podszewka: miękka, przyjazna dla skóry tkanina
-                <br/>• Wszystkie materiały posiadają certyfikaty bezpieczeństwa dla dzieci
+                <br/>• 30% bawełna, 70% poliester
+                <br/>• Gęstość: 320
+                <br/>• Gruba szczotkowana dzianina
               </AccordionContent>
             </AccordionItem>
 
@@ -121,8 +120,7 @@ const FAQ = () => {
               </AccordionTrigger>
               <AccordionContent>
                 Tak! Kombinezony Yappi zostały zaprojektowane z myślą o polskich warunkach klimatycznych. 
-                Zapewniają ochronę przed chłodem, wiatrem i wilgocią. Są idealne na jesień i zimę, 
-                zapewniając dziecku ciepło i komfort podczas zabaw na świeżym powietrzu.
+				Są idealne na jesień, zimę i wiosnę, zapewniając dziecku ciepło i komfort.
               </AccordionContent>
             </AccordionItem>
 
@@ -132,7 +130,7 @@ const FAQ = () => {
               </AccordionTrigger>
               <AccordionContent>
                 Możesz skontaktować się z nami na kilka sposobów:
-                <br/>• E-mail: kontakt@yappi-kids.pl
+                <br/>• E-mail: kontakt@yappi.pl
                 <br/>• Telefon: +48 123 456 789
                 <br/>• Godziny pracy: 9:00-17:00, poniedziałek-piątek
                 <br/>• Strona kontaktowa: formularz na stronie /kontakt

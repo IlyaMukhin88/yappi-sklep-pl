@@ -96,15 +96,15 @@ const Kontakt = () => {
                   <div className="space-y-3">
                     <div>
                       <h3 className="font-semibold">Ogólne zapytania</h3>
-                      <p className="text-muted-foreground">kontakt@yappi-kids.pl</p>
+                      <p className="text-muted-foreground">kontakt@yappi.pl</p>
                     </div>
                     <div>
                       <h3 className="font-semibold">Zamówienia</h3>
-                      <p className="text-muted-foreground">zamowienia@yappi-kids.pl</p>
+                      <p className="text-muted-foreground">kontakt@yappi.pl</p>
                     </div>
                     <div>
                       <h3 className="font-semibold">Zwroty i reklamacje</h3>
-                      <p className="text-muted-foreground">zwroty@yappi-kids.pl</p>
+                      <p className="text-muted-foreground">kontakt@yappi.pl</p>
                     </div>
                   </div>
                 </CardContent>

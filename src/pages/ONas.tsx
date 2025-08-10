@@ -28,7 +28,7 @@ const ONas = () => {
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Yappi Kids to polska marka specjalizująca się w produkcji wysokiej jakości 
-                kombinezonów dziecięcych. Od 2020 roku tworzymy odzież, która łączy w sobie 
+                kombinezonów dziecięcych. Od 2022 roku tworzymy odzież, która łączy w sobie 
                 komfort, bezpieczeństwo i style, idealnie dostosowaną do polskich warunków klimatycznych.
               </p>
             </div>
