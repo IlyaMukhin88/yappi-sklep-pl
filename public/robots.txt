@@ -1,14 +1,21 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://yappi-kids.pl/sitemap.xml
+
+# Disallow admin and internal paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /checkout/success/
+
+# Allow important pages
+Allow: /
+Allow: /produkty/
+Allow: /kontakt/
+Allow: /o-nas/
+Allow: /regulamin/
+Allow: /polityka-prywatnosci/
+Allow: /faq/
+Allow: /tabela-rozmiarow/
