@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ProductsSection from "@/components/ProductsSection";
@@ -10,6 +11,7 @@ import kombinezkonSzaryImage from "@/assets/kombinezon-szary.jpg";
 import kombinezkonNiebieskiImage from "@/assets/kombinezon-niebieski.jpg";
 
 const Index = () => {
+  const navigate = useNavigate();
   const { cart, addToCart, updateQuantity, removeFromCart } = useCart();
   const [isCartOpen, setIsCartOpen] = useState(false);
 
@@ -31,8 +33,7 @@ const Index = () => {
   };
 
   const handleCheckout = () => {
-    // In a real app, this would navigate to checkout page
-    console.log("Proceeding to checkout with:", cart);
+    navigate("/zamowienie");
   };
 
   // Structured data for SEO

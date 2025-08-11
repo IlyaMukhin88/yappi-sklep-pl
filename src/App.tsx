@@ -13,6 +13,8 @@ import Kontakt from "./pages/Kontakt";
 import Regulamin from "./pages/Regulamin";
 import PolitykaPrywatnosci from "./pages/PolitykaPrywatnosci";
 import ONas from "./pages/ONas";
+import Checkout from "./pages/Checkout";
+import Potwierdzenie from "./pages/Potwierdzenie";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,8 @@ const App = () => (
             <Route path="/regulamin" element={<Regulamin />} />
             <Route path="/polityka-prywatnosci" element={<PolitykaPrywatnosci />} />
             <Route path="/o-nas" element={<ONas />} />
+            <Route path="/zamowienie" element={<Checkout />} />
+            <Route path="/potwierdzenie" element={<Potwierdzenie />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
