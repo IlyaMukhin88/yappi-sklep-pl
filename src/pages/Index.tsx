@@ -27,7 +27,7 @@ const Index = () => {
       color,
       size,
       quantity,
-      89, // price
+      150, // price
       productImages[color as keyof typeof productImages]
     );
   };
