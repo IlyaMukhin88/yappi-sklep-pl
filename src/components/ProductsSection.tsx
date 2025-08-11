@@ -11,7 +11,7 @@ const ProductsSection = ({ onAddToCart }: ProductsSectionProps) => {
     {
       id: "yappi-kombinezon",
       name: "Kombinezon dziecięcy Yappi",
-      price: 89,
+      price: 150,
       colors: [
         {
           name: "Szary",
