@@ -224,21 +224,29 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send admin email
     const adminEmailResponse = await resend.emails.send({
-      from: "Yappi Shop <noreply@yappi.pl>",
-      to: ["admin@yappi.pl"], // Replace with actual admin email
+      from: "Yappi <noreply@yappi.pl>",
+      to: ["sklep@yappi.pl"], // Admin email
       subject: `🛍️ Nowe zamówienie #${orderData.orderNumber} - ${orderData.total} PLN`,
       html: adminEmailHtml,
     });
 
     console.log("Admin email sent:", adminEmailResponse);
 
+    if (adminEmailResponse.error) {
+      throw new Error(`Admin email failed: ${adminEmailResponse.error.message}`);
+    }
+
     // Send customer email
     const customerEmailResponse = await resend.emails.send({
-      from: "Yappi Shop <noreply@yappi.pl>",
+      from: "Yappi <noreply@yappi.pl>",
       to: [orderData.customer.email],
       subject: `✅ Potwierdzenie zamówienia #${orderData.orderNumber} - Yappi`,
       html: customerEmailHtml,
     });
+
+    if (customerEmailResponse.error) {
+      throw new Error(`Customer email failed: ${customerEmailResponse.error.message}`);
+    }
 
     console.log("Customer email sent:", customerEmailResponse);
 
