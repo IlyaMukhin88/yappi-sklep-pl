@@ -37,7 +37,7 @@ const Checkout = () => {
     setFormData(prev => ({ ...prev, acceptTerms: checked }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.acceptTerms) {
@@ -49,7 +49,7 @@ const Checkout = () => {
       return;
     }
 
-    if (!formData.firstName || !formData.lastName || !formData.email) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.street || !formData.postalCode || !formData.city) {
       toast({
         title: "Błąd",
         description: "Wypełnij wszystkie wymagane pola.",
@@ -61,17 +61,59 @@ const Checkout = () => {
     // Generate order number
     const orderNumber = `YP${Date.now().toString().slice(-6)}`;
     
-    // In a real app, this would send order to backend
-    console.log("Order submitted:", { orderNumber, formData, cart });
-    
-    // Clear cart and redirect to confirmation
-    clearCart();
-    navigate(`/potwierdzenie?order=${orderNumber}`);
-    
-    toast({
-      title: "Zamówienie złożone",
-      description: `Twoje zamówienie ${orderNumber} zostało wysłane. Sprawdź e-mail.`,
-    });
+    try {
+      // Prepare order data
+      const orderData = {
+        orderNumber,
+        customer: {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          street: formData.street,
+          postalCode: formData.postalCode,
+          city: formData.city,
+          notes: formData.notes
+        },
+        items: cart.items,
+        total: cart.total,
+        currency: 'PLN'
+      };
+
+      // Send emails via edge function
+      const response = await fetch('https://pattsjobdxfwjuvmpmdq.supabase.co/functions/v1/send-order-emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(orderData)
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to send order emails');
+      }
+
+      console.log("Order emails sent successfully:", result);
+      
+      // Clear cart and redirect to confirmation
+      clearCart();
+      navigate(`/potwierdzenie?order=${orderNumber}`);
+      
+      toast({
+        title: "Zamówienie złożone",
+        description: `Twoje zamówienie ${orderNumber} zostało wysłane. Sprawdź e-mail.`,
+      });
+
+    } catch (error) {
+      console.error("Error submitting order:", error);
+      toast({
+        title: "Błąd",
+        description: "Wystąpił problem przy składaniu zamówienia. Spróbuj ponownie.",
+        variant: "destructive"
+      });
+    }
   };
 
   if (cart.items.length === 0) {
