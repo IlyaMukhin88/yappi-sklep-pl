@@ -40,7 +40,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Yappi. Wszystkie prawa zastrzeżone.
+            © 2025 Yappi. Wszystkie prawa zastrzeżone.
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <p className="text-sm text-muted-foreground">
