@@ -21,6 +21,16 @@
     <meta name="twitter:title" content="Yappi - Ciepłe Kombinezony Dziecięce" />
     <meta name="twitter:description" content="Ciepłe, wygodne kombinezony dziecięce Yappi. Darmowa dostawa!" />
     <meta name="twitter:image" content="/hero-image.jpg" />
+    <script>
+      // Handle GitHub Pages SPA redirect
+      (function() {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
 
   <body>
